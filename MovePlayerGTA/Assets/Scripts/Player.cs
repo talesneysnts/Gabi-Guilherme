@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    Animator  ani;
+    Animator ani;
 
     private Transform tcamera;
 
     float velocity, gabiVelocity = 2;
     float horizontal, vertical, rayDistanceDown = 10;
-
 
     Vector3 v3;
     Quaternion q1, q2;
@@ -78,10 +77,8 @@ public class Player : MonoBehaviour
 
     }
 
-
     bool Raycast()
     {
-        
         return Physics.Raycast(transform.position + Vector3.up, -transform.up, out hit, rayDistanceDown, layerMask);
     }
 
