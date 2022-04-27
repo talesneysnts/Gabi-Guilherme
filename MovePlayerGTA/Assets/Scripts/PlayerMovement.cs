@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     Animator ani;
 
@@ -28,16 +28,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    SelectAnimator(index);
-        //    index++;
-        //    if (index >= ani.Length)
-        //    {
-        //        index = 0;
-        //    }
-        //}
-
         Movement();
     }
 
